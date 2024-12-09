@@ -4,46 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Zine</title>
+  <!-- Link to the CSS -->
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Font Awesome for icons -->
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    /* Ensure the body has a black background */
+    body {
+      background-color: #000;
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="top-bar">
-      <div class="hamburger-menu"><i class="fas fa-bars"></i></div>
-      <div class="logo">YOUR ZINE</div>
-      <div class="search-icon"><i class="fas fa-search"></i></div>
-    </div>
-  </header>
+  <!-- Wrapper container for centering content -->
+  <div class="container">
+    <header>
+      <div class="top-bar">
+        <div class="hamburger-menu"><i class="fas fa-bars"></i></div>
+        <div class="logo">YOUR ZINE</div>
+        <div class="search-icon"><i class="fas fa-search"></i></div>
+      </div>
+    </header>
 
-  <main>
-    <article class="recent-article">
-      <img src="example-image.jpg" alt="Article Image">
-      <h1>Article Title</h1>
-      <p class="author-date">By Author Name, December 9, 2024</p>
-      <p class="body-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ddolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum 
-      </p>
-    </article>
+    <main>
+      <article class="recent-article">
+        <img src="example-image.jpg" alt="Article Image">
+        <h1>Article Title</h1>
+        <p class="author-date">By Author Name, December 9, 2024</p>
+        <p class="body-text">
+          This is the body of your article. Add text and images as needed.
+        </p>
+      </article>
 
-    <div class="social-media">
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-    </div>
+      <div class="social-media">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
 
-    <div class="newsletter">
-      <p>Sign up for our newsletter:</p>
-      <form>
-        <input type="text" name="name" placeholder="Your Name">
-        <input type="email" name="email" placeholder="Your Email">
-        <button type="submit">Sign Up</button>
-      </form>
-    </div>
-  </main>
+      <div class="newsletter">
+        <p>Sign up for our newsletter:</p>
+        <form>
+          <input type="text" name="name" placeholder="Your Name">
+          <input type="email" name="email" placeholder="Your Email">
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </main>
 
-  <footer>
-    <p>&copy; 2024 Your Zine. All rights reserved.</p>
-  </footer>
+    <footer>
+      <p>&copy; 2024 Your Zine. All rights reserved.</p>
+    </footer>
+  </div>
 </body>
 </html>

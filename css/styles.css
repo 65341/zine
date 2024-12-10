@@ -18,7 +18,7 @@ body {
 
 /* Header */
 header {
-  background: #222; /* Header background */
+  background: #000; /* Header background */
   display: flex;
   align-items: center; /* Center align items vertically */
   justify-content: space-between; /* Space out the content horizontally */
@@ -27,8 +27,7 @@ header {
 }
 
 .logo img {
-  max-height: 100%; /* Ensures the logo fits within the header height */
-  height: 50px; /* Maximum height for the logo */
+  max-height: 80%; /* Ensures the logo fits within the header height */
   max-width: 100%; /* Prevents overflow horizontally */
   width: auto; /* Maintain the aspect ratio */
   object-fit: contain; /* Ensures no distortion */

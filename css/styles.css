@@ -13,7 +13,6 @@ body {
   width: 100%;
   max-width: 800px; /* Restrict content width on larger screens */
   margin: 0 auto;
-  padding: 0 15px; /* Padding for mobile edges */
   box-sizing: border-box; /* Ensure padding doesn’t affect width */
 }
 

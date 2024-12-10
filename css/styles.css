@@ -18,9 +18,22 @@ body {
 
 /* Header */
 header {
-  background: #222; /* Darker black-gray for header */
-  padding: 10px;
+  background: #222; /* Header background */
+  display: flex;
+  align-items: center; /* Center align items vertically */
+  justify-content: space-between; /* Space out the content horizontally */
+  padding: 0 10px; /* Padding for spacing */
+  height: 60px; /* Fixed height for the header */
 }
+
+.logo img {
+  max-height: 100%; /* Ensures the logo fits within the header height */
+  height: 50px; /* Maximum height for the logo */
+  max-width: 100%; /* Prevents overflow horizontally */
+  width: auto; /* Maintain the aspect ratio */
+  object-fit: contain; /* Ensures no distortion */
+}
+
 
 .top-bar {
   display: flex;
@@ -144,5 +157,5 @@ footer {
   .body-text {
     font-size: 0.9rem; /* Adjust body text for mobile */
     line-height: 1.4; /* Match line spacing to mobile layout */
-  }
+  } 
 }

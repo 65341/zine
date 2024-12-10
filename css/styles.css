@@ -1,10 +1,10 @@
 /* Base styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Georgia', serif; /* Default font for general text outside the article */
   margin: 0;
   padding: 0;
   background-color: #000; /* Black background */
-  color: #fff; /* White text */
+  color: #d3d3d3; /* Softer gray for general text */
   display: flex;
   justify-content: center;
 }
@@ -31,7 +31,7 @@ header {
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #fff; /* White logo text */
+  color: #d3d3d3; /* Softer gray for the logo text */
 }
 
 /* Main Content */
@@ -45,18 +45,35 @@ main {
 }
 
 .recent-article h1 {
-  font-size: 1.8rem;
+  font-family: 'Georgia', serif; /* Professional serif font */
+  font-size: 2rem; /* Slightly larger for emphasis */
+  font-weight: bold;
   margin: 10px 0;
+  color: #e0e0e0; /* Slightly softer white for the title */
+}
+
+.recent-article p {
+  font-family: 'Georgia', serif; /* Professional serif font */
+  font-size: 1.2rem; /* Slightly larger for readability */
+  line-height: 1.8; /* Comfortable spacing between lines */
+  color: #c0c0c0; /* Softer gray for readability */
+  margin: 15px 0; /* Spacing between paragraphs */
+  text-align: justify; /* Professional justification for body text */
 }
 
 .author-date {
-  font-size: 0.9rem;
-  color: #aaa; /* Light gray for subtle details */
+  font-family: 'Georgia', serif; /* Professional, readable serif font */
+  font-size: 1rem;
+  color: #b0b0b0; /* Softer light gray for subtle details */
+  margin-bottom: 15px;
 }
 
 .body-text {
-  line-height: 1.6;
-  color: #fff; /* Ensure article text is white */
+  font-family: 'Georgia', serif; /* Consistent serif font for the body */
+  font-size: 1.1rem; /* Slightly larger for readability */
+  line-height: 1.8; /* Comfortable line spacing for professional articles */
+  color: #c0c0c0; /* Softer gray for the body text */
+  margin-bottom: 20px;
 }
 
 /* Social Media */
@@ -69,11 +86,13 @@ main {
 .social-media a {
   margin: 0 10px;
   font-size: 1.5rem;
-  color: #fff; /* White icons */
+  color: #d3d3d3; /* Softer gray for icons */
 }
 
 /* Newsletter */
 .newsletter p {
+  font-family: Arial, sans-serif; /* Keep sans-serif for clean readability */
+  color: #b0b0b0; /* Softer gray for newsletter text */
   text-align: center;
 }
 
@@ -90,13 +109,13 @@ main {
   max-width: 400px;
   background: #333; /* Dark gray for inputs */
   border: none;
-  color: #fff; /* White text in inputs */
+  color: #d3d3d3; /* Softer gray text in inputs */
 }
 
 .newsletter button {
   padding: 10px 20px;
   background: #444; /* Slightly lighter gray for button */
-  color: #fff;
+  color: #d3d3d3;
   border: none;
   cursor: pointer;
 }
@@ -107,7 +126,7 @@ footer {
   padding: 10px;
   background: #222; /* Darker background for footer */
   font-size: 0.8rem;
-  color: #aaa; /* Light gray text for footer */
+  color: #aaa; /* Softer light gray text for footer */
 }
 
 /* Responsive Design */

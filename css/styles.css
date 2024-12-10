@@ -46,7 +46,7 @@ main {
 
 .recent-article h1 {
   font-family: 'Georgia', serif; /* Professional serif font */
-  font-size: 2rem; /* Slightly larger for emphasis */
+  font-size: 1.8rem; /* Adjusted for mobile readability */
   font-weight: bold;
   margin: 10px 0;
   color: #e0e0e0; /* Slightly softer white for the title */
@@ -54,24 +54,25 @@ main {
 
 .recent-article p {
   font-family: 'Georgia', serif; /* Professional serif font */
-  font-size: 1.2rem; /* Slightly larger for readability */
-  line-height: 1.8; /* Comfortable spacing between lines */
+  font-size: 1rem; /* Reduced size for readability */
+  line-height: 1.6; /* Slightly tighter line spacing */
   color: #c0c0c0; /* Softer gray for readability */
-  margin: 15px 0; /* Spacing between paragraphs */
-  text-align: justify; /* Professional justification for body text */
+  margin: 10px 0; /* Reduced spacing between paragraphs */
+  text-align: left; /* Left-aligned for a clean look */
 }
 
 .author-date {
   font-family: 'Georgia', serif; /* Professional, readable serif font */
   font-size: 1rem;
+  font-style: italic;
   color: #b0b0b0; /* Softer light gray for subtle details */
   margin-bottom: 15px;
 }
 
 .body-text {
   font-family: 'Georgia', serif; /* Consistent serif font for the body */
-  font-size: 1.1rem; /* Slightly larger for readability */
-  line-height: 1.8; /* Comfortable line spacing for professional articles */
+  font-size: 1rem; /* Reduced size for readability */
+  line-height: 1.6; /* Tighter line spacing for better readability */
   color: #c0c0c0; /* Softer gray for the body text */
   margin-bottom: 20px;
 }
@@ -130,8 +131,18 @@ footer {
 }
 
 /* Responsive Design */
-@media (min-width: 768px) {
-  .container {
-    padding: 0; /* Remove extra padding for desktop view */
+@media (max-width: 768px) {
+  .recent-article h1 {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+  }
+
+  .recent-article p {
+    font-size: 0.9rem; /* Smaller font size for mobile */
+    line-height: 1.4; /* Tighter line spacing for mobile */
+  }
+
+  .body-text {
+    font-size: 0.9rem; /* Adjust body text for mobile */
+    line-height: 1.4; /* Match line spacing to mobile layout */
   }
 }

@@ -39,6 +39,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative; /* Ensure child elements like .search-dropdown are positioned relative to this */
 }
 
 .logo {
@@ -208,4 +209,52 @@ footer {
 
 .search-icon {
   cursor: pointer; /* Change cursor to hand when hovering */
+}
+
+.search-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%; /* Place it directly below the search icon */
+  right: 0; /* Align it with the right edge of the search icon */
+  z-index: 1000;
+}
+
+.search-dropdown.active {
+  display: block;
+}
+
+.search-dropdown input {
+  width: 200px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  font-size: 14px;
+}
+
+.search-dropdown input::placeholder {
+  color: #aaa;
+}
+
+.desktop-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.desktop-nav a {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: #d3d3d3;
+  text-transform: uppercase;
+  padding: 10px 0;
 }

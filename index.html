@@ -27,9 +27,12 @@
         <div class="logo">
           <img src="header_icon.jpeg" alt="S.W.A.M.P. Logo">
         </div>
-        <div class="search-icon">
+        <div class="search-icon" onclick="toggleSearch()">
           <i class="fas fa-search"></i>
-        </div>
+          <div id="search-dropdown" class="dropdown search-dropdown">
+            <input type="text" placeholder="Search..." />
+          </div> 
+        </div>       
       </div>
       <div id="dropdown-menu" class="dropdown">
         <a href="#">Home</a>

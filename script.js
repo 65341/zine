@@ -48,5 +48,17 @@ function toggleDropdown() {
     dropdownMenu.classList.toggle("active");
   }  
 
+  function toggleSearch() {
+    const searchDropdown = document.getElementById("search-dropdown");
+    searchDropdown.classList.toggle("active");
+  
+    if (searchDropdown.classList.contains("active")) {
+      searchDropdown.style.display = "block";
+    } else {
+      searchDropdown.style.display = "none";
+    }
+  }
+  
+
 // Run the checkDevice function when the page loads
 window.addEventListener("DOMContentLoaded", checkDevice);

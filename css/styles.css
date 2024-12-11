@@ -14,6 +14,7 @@ body {
   max-width: 800px; /* Restrict content width on larger screens */
   margin: 0 auto;
   box-sizing: border-box; /* Ensure padding doesn’t affect width */
+  position: relative; /* Ensure dropdown is positioned relative to this */
 }
 
 /* Header */
@@ -164,4 +165,47 @@ footer {
     font-size: 0.9rem; /* Adjust body text for mobile */
     line-height: 1.4; /* Match line spacing to mobile layout */
   } 
+}
+
+/* Dropdown Menu Styling */
+.dropdown {
+  display: none; /* Hidden by default */
+  position: absolute; /* Position it relative to the .container */
+  top: 45px; /* Align it below the header */
+  left: 0px; /* Align it under the hamburger menu */
+  background-color: #111; /* Dark grey background */
+  padding: 10px;
+  border-radius: 5px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Optional: Add shadow for depth */
+  width: auto; /* Make the box width adjust to its content */
+}
+
+.dropdown a {
+  display: block; /* Each link gets its own line */
+  color: #d3d3d3; /* Text color */
+  text-decoration: none; /* Remove underline */
+  font-family: Arial, sans-serif; /* Sans-serif font */
+  font-size: 20px; /* Font size */
+  margin: 5px 0; /* Spacing between links */
+  text-transform: uppercase; /* All caps */
+  padding: px; /* Add padding for clickable area */
+  cursor: pointer; /* Change cursor to hand */
+}
+
+.dropdown a:hover {
+  background-color: #444; /* Slightly lighter grey on hover */
+  color: #fff; /* White text on hover */
+}
+
+/* Show Dropdown When Active */
+.dropdown.active {
+  display: block;
+}
+
+.hamburger-menu {
+  cursor: pointer; /* Change cursor to hand when hovering */
+}
+
+.search-icon {
+  cursor: pointer; /* Change cursor to hand when hovering */
 }

@@ -43,5 +43,10 @@ function checkDevice() {
   }
 }
 
+function toggleDropdown() {
+    const dropdownMenu = document.getElementById("dropdown-menu");
+    dropdownMenu.classList.toggle("active");
+  }  
+
 // Run the checkDevice function when the page loads
 window.addEventListener("DOMContentLoaded", checkDevice);

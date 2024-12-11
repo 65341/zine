@@ -24,6 +24,7 @@ header {
   justify-content: space-between; /* Space out the content horizontally */
   padding: 0 10px; /* Padding for spacing */
   height: 60px; /* Fixed height for the header */
+  margin-bottom: 0; /* Ensure no gap between header and main content */
 }
 
 .logo img {
@@ -32,7 +33,6 @@ header {
   width: auto; /* Maintain the aspect ratio */
   object-fit: contain; /* Ensures no distortion */
 }
-
 
 .top-bar {
   display: flex;
@@ -48,7 +48,14 @@ header {
 
 /* Main Content */
 main {
-  padding: 15px 0;
+  padding: 0; /* Remove padding from the main element */
+  margin: 0; /* Ensure no extra margin is added */
+}
+
+.recent-article img {
+  display: block; /* Prevent extra space below the image */
+  margin: 0; /* Remove any default margins */
+  padding: 0; /* Remove any default padding */
 }
 
 .recent-article img {

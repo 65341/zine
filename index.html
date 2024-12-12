@@ -25,13 +25,10 @@
           <i class="fas fa-bars"></i>
         </div>
         <div class="logo">
-          <img src="header_icon.jpeg" alt="S.W.A.M.P. Logo">
-        </div>
+          <img src="header_icon.jpeg" alt="S.W.A.M.P. Logo" onclick="setPage('HOME')" style="cursor: pointer;">
+        </div>        
         <div class="search-icon" onclick="toggleSearch()">
           <i class="fas fa-search"></i>
-          <div id="search-dropdown" class="search-dropdown">
-            <input type="text" placeholder="Search..." onclick="toggleSearch()"></input>
-          </div> 
         </div>       
       </div>
       <div id="dropdown-menu" class="dropdown">
@@ -39,7 +36,10 @@
         <a onclick="setPage('ARTICLES'); toggleDropdown();">Articles</a>
         <a onclick="setPage('CONTACT'); toggleDropdown();">Contact</a>
         <a onclick="setPage('EVENTS'); toggleDropdown();">Events</a>
-      </div>      
+      </div>
+      <div id="search-dropdown" class="search-dropdown">
+        <input type="text" placeholder="Search..."></input>
+      </div> 
     </header>    
     <main id="main-content">
     </main>

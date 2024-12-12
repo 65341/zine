@@ -82,7 +82,7 @@ document
   
     // Add a fade-out effect
     mainContent.style.opacity = 1; // Ensure it's fully visible
-    mainContent.style.transition = "opacity 0.2s ease-out";
+    mainContent.style.transition = "opacity 0.1s ease-out";
     mainContent.style.opacity = 0;
 
     setTimeout(() => {
@@ -113,7 +113,7 @@ document
             break;
         }
     // Add a fade-in effect
-    mainContent.style.transition = "opacity 0.8s ease-in";
+    mainContent.style.transition = "opacity 1s ease-in";
     mainContent.style.opacity = 1;
     }, 500); // Match the duration of the fade-out
   }

@@ -15,7 +15,7 @@ function checkDevice() {
     // Create an array of link text and their href values
     const links = [
       { text: "HOME" },
-      { text: "ARTICLES"},
+      { text: "ISSUES"},
       { text: "CONTACT" },
       { text: "EVENTS" },
     ];
@@ -120,10 +120,10 @@ document
         case "HOME":
             loadMostRecentArticle();
             break;
-        case "ARTICLES":
+        case "ISSUES":
             mainContent.innerHTML = `
-            <h1>Articles</h1>
-            <p>Welcome to the articles section. Explore our latest content here.</p>
+            <h1>Issues</h1>
+            <p>Welcome to the issues section. Explore our latest content here.</p>
             `;
             break;
         case "CONTACT":
@@ -200,6 +200,7 @@ document
                 <img src="issue001.jpg" alt="issue #1" class="cover-image">
               </a>
             </div>
+            <div class="divider"></div>
           `;
         });
       })

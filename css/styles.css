@@ -210,6 +210,10 @@ footer {
   cursor: pointer; /* Change cursor to hand when hovering */
 }
 
+.hamburger-menu i, .search-icon i {
+  font-size: 1.3em; /* Twice as large as the default size */
+}
+
 .search-dropdown {
   display: none; /* Hidden by default */
   position: absolute; /* Position it relative to the .container */
@@ -260,4 +264,47 @@ footer {
   color: #d3d3d3;
   text-transform: uppercase;
   padding: 10px 0;
+}
+
+/* Divider Line */
+.divider {
+  height: 2px;
+  background-color: #444; /* Dark grey */
+  margin: 30px 0; /* Spacing above and below */
+}
+
+/* More Content Section */
+.more-content {
+  text-align: center; /* Center-align the content */
+  margin-top: 20px; /* Add spacing above the section */
+}
+
+.more-content p {
+  font-size: 1.2rem; /* Slightly larger font size */
+  font-weight: bold; /* Bold text */
+  color: #d3d3d3; /* Softer gray */
+  margin-bottom: 15px; /* Spacing below the text */
+}
+
+.more-content .arrow {
+  font-size: 1.5rem; /* Larger arrow size */
+  color: #d3d3d3; /* Match arrow color to text */
+}
+
+.more-content .cover-link {
+  display: inline-block; /* Center the link */
+  text-decoration: none; /* Remove underline */
+}
+
+.more-content .cover-image {
+  width: 100%; /* Make the image responsive */
+  max-width: 400px; /* Limit max width for larger screens */
+  border-radius: 10px; /* Add subtle rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add a slight shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.more-content .cover-image:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Enhance shadow on hover */
 }

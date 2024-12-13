@@ -193,6 +193,13 @@ document
                 <img src="${articleFolder}image.jpeg" alt="Article Image">
                 ${html}
             </article>
+            <div class="divider"></div>
+            <div class="more-content">
+              <p>Check out more from this issue <span class="arrow">↓</span></p>
+              <a href="path-to-full-issue.html" class="cover-link">
+                <img src="issue001.jpg" alt="issue #1" class="cover-image">
+              </a>
+            </div>
           `;
         });
       })

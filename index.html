@@ -38,10 +38,26 @@
         <a onclick="setPage('EVENTS'); toggleDropdown();">Events</a>
       </div>
       <div id="search-dropdown" class="search-dropdown">
-        <input type="text" placeholder="Search..."></input>
+        <input type="text" placeholder="Search articles..."></input>
       </div> 
     </header>    
-    <main id="main-content">
+    <main>
+      <maincontent id="main-content">
+      </maincontent>
+      <div class="social-media">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="newsletter">
+        <p>Sign up for our newsletter:</p>
+        <form id="newsletter-form">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <button type="submit">Sign Up</button>
+        </form>
+        <p id="form-message" style="display: none; color: green;"></p>
+      </div>
     </main>
     <footer>
       <p>&copy; 2024 S.W.A.M.P. Magazine. All rights reserved.</p>

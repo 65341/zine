@@ -193,20 +193,6 @@ document
                 <img src="${articleFolder}image.jpeg" alt="Article Image">
                 ${html}
             </article>
-            <div class="social-media">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-  
-            <div class="newsletter">
-                <p>Sign up for our newsletter:</p>
-                <form>
-                    <input type="text" name="name" placeholder="Your Name">
-                    <input type="email" name="email" placeholder="Your Email">
-                    <button type="submit">Sign Up</button>
-                </form>
-            </div>
           `;
         });
       })
@@ -218,7 +204,42 @@ document
           <p>Unable to load the most recent article. Please try again later.</p>
         `;
       });
-  }  
+  }
+
+  //newsletter code
+  document.getElementById("newsletter-form").addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent default form submission behavior
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    // Replace 'your-formspree-id' with your Formspree endpoint ID
+    fetch("https://formspree.io/f/xjkvddny", {
+        method: "POST",
+        body: formData,
+        headers: {
+            Accept: "application/json",
+        },
+    })
+        .then((response) => {
+            if (response.ok) {
+                document.getElementById("form-message").textContent =
+                    "Thanks for signing up!";
+                document.getElementById("form-message").style.display = "block";
+                form.reset(); // Reset the form fields
+            } else {
+                document.getElementById("form-message").textContent =
+                    "Oops! Something went wrong. Please try again.";
+                document.getElementById("form-message").style.display = "block";
+            }
+        })
+        .catch((error) => {
+            console.error("Form submission error:", error);
+            document.getElementById("form-message").textContent =
+                "Oops! Something went wrong. Please try again.";
+            document.getElementById("form-message").style.display = "block";
+        });
+});
   
 // Run the checkDevice function when the page loads
 window.addEventListener("DOMContentLoaded", checkDevice);

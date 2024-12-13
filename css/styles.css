@@ -28,9 +28,14 @@ header {
   margin-bottom: 0; /* Ensure no gap between header and main content */
 }
 
+.logo {
+  display: flex; /* Enables flexbox for alignment */
+  justify-content: center; /* Centers the logo horizontally */
+}
+
 .logo img {
   max-height: 80%; /* Ensures the logo fits within the header height */
-  max-width: 100%; /* Prevents overflow horizontally */
+  max-width: 80%; /* Prevents overflow horizontally */
   width: auto; /* Maintain the aspect ratio */
   object-fit: contain; /* Ensures no distortion */
 }
@@ -40,12 +45,6 @@ header {
   justify-content: space-between;
   align-items: center;
   position: relative; /* Ensure child elements like .search-dropdown are positioned relative to this */
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #d3d3d3; /* Softer gray for the logo text */
 }
 
 /* Main Content */

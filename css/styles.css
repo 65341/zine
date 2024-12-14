@@ -273,6 +273,10 @@ footer {
   margin: 30px 0; /* Spacing above and below */
 }
 
+.divider.black {
+  background-color: #000; /* Black color for the divider */
+}
+
 /* More Content Section */
 .more-content {
   text-align: center; /* Center-align the content */

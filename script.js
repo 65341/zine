@@ -200,7 +200,7 @@ document
                 <img src="issue001.jpg" alt="issue #1" class="cover-image">
               </a>
             </div>
-            <div class="divider"></div>
+            <div class="divider black"></div>
           `;
         });
       })
